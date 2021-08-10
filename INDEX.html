@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Emotion To Emoji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+      <button class="btn btn-warning" id="b1">Which Emoji are you? <div>
+        <span id="emoji">
+        <span>&#9996;&#127997;</span>
+        <span>&#128076;&#127997;</span>
+        <span>&#128077;&#127997;</span>
+      </span>
+      </div></button>
+      <br><br>
+      
+      <p style="font-size: 22px;">Take your selfie to generate emoji</p>
+      	<br>
+        <b style="column-count: 12;">
+        </b>
+        <div>
+            <span id="webcam"></span>
+            <span><h4 class="btn btn-success">prediction-</h4><div id="op"></div></span>
+            <span id="snap"></span>
+        </div>
+        <div>
+            <span><button id="capture">capture</button><br><br><button id="analyze">analyze</button></span>
+        </div>
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
